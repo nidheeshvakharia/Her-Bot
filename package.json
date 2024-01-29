@@ -1,0 +1,11 @@
+{
+    "name": "women-health-chat-bot",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "node script.js"
+    },
+    "dependencies": {
+        "openai": "^4.25.0"
+    },
+    "type": "module"
+}

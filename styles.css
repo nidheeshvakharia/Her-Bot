@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1E1F20;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.docs {
+    padding: 2em;
+    width: 50%;
+    
+}
+
+.title{
+    font-family: "Poppins";
+    font-size: 9em;
+    font-weight: 700;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 17%, #FFCC70 39%, #ffffff 60%, #ffffff 80%, #ffffff 100%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.description{
+    font-family: "Poppins";
+    color: white;
+    font-size: 4.5em;
+
+}
+.chat-container{
+    top:7rem;
+    font-family: "Roboto";
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    width: 85%;
+    display: block;
+    height: 35rem;
+    background-color: #131314;
+    border-radius: 2rem;
+    filter: drop-shadow(0 0 20px rgba(0,0,0,.3))
+
+}
+
+
+.chat-response{
+    background-color: rgb(30,31,32);
+    color: white;
+    margin: 10px 0;
+    padding: .75em;
+    text-align: left;
+    font-size: 1.1em;
+    width:35%;
+    transition-duration: 1s;
+
+}
+
+.chat-user{
+    margin-right: 0;
+    margin-left: auto;
+    border-radius: 1em 1em .3em;
+}
+
+.chat-bot {
+    margin-left: 0;
+    margin-right: auto;
+    border-radius: 1em 1em 1em .3em;
+
+}
+
+.chat-input {
+    z-index: 1;
+    margin-top: 1em;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+}
+
+input{
+    outline-style: none;
+    border-style: solid;
+    border-width: 2px;
+    outline-width: 10px;
+    height: 1rem;
+    width: 25rem;
+    border-radius: 2rem;
+    background-color: #131314;
+    border-color: #252527;
+    color: white;
+    padding: 1em;
+    font-size: 1.1em;
+    
+}
+
+input:focus {
+    border-color: #5f5f65;
+}
+
+input::placeholder {
+    color: rgb(145, 145, 145);
+    font-weight: 600;
+}
+
+button {
+    top: 50%;
+    outline-style: none;
+    border-style: none;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    font-size: rem;
+    background-color: rgba(255, 255, 255,0);
+    color: white;
+    padding: 1em;
+    
+
+}
+
+.material-symbols-outlined {
+    font-size: 2em;
+    
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.material-symbols-outlined:hover {
+    transition: all 0.1s ease-in-out;
+    scale: 1.1;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 24
+
+  
+}
+
+::-webkit-scrollbar {
+    left: 10em;
+    width: 5px;
+    margin: 10px;
+    position: absolute;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    visibility: hidden;
+    margin: 10px;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(86, 89, 92);
+    opacity: 50%; 
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(195, 195, 195); 
+}
+::-webkit-scrollbar-corner {
+    visibility: hidden;
+}
